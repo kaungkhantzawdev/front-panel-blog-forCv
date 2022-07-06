@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MODERN BLOG</title>
+    <link rel="icon" href="img/letter-b.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark">
+
+<!--nav -->
+<div class="container-fluid header">
+    <div class="row">
+        <div class="col-12">
+            <div class="">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <div class="logo">
+                                <img src="img/letter-b.png" alt="" class="img-fluid">
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="menu-box" id="menu">
+                                <div class="menu-item" id="meunItem"></div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="categories.html">Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="sorting.html">Sorting</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="searchByDate.html">Search by Date</a>
+                                </li>
+                            </ul>
+                            <button class="btn btn-link round_C me-2 darkMode">
+                                <i class="bi bi-moon-fill modeIcon text-primary" style="font-size: 18px"></i>
+                            </button>
+                            <button class="btn btn-link round_C search-btn me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <i class="bi bi-search text-primary" style="font-size: 18px"></i>
+                            </button>
+                            <div class="ms-xl-2 mt-2 mt-lg-0">
+                                <a href="#" class="btn btn-primary round_C text-white">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel" class="text-primary">Search Box</h5>
+                <button type="button" class="btn round_C text-reset btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="w-100">
+                    <div class="search-form mx-auto">
+                        <form class="d-flex">
+                            <input class="form-control me-2 round_C" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary round_C" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--content-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="my-4 shake">
+                            <a href="#" class="">
+                                <img src="img/adIphone.gif" alt="" class="img-fluid round_C">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-4 shake">
+                            <div class="dropdown text-end">
+                                <button class="round_C btn btn-primary text-white dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-calendar-check me-2"></i>sorting
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <div class="row">
+                                <div class="col-12 col-xl-6">
+                                    <img src="img/portrait.jpg" class="img-fluid round_C shake" alt="">
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <div class="ms-xl-3 my-4 my-xl-0 w-75 shake">
+                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                            <i class="bi bi-calendar-check me-2"></i>
+                                            December, 7, 2021
+                                        </span>
+                                        <div class="">
+                                            <h2 class="fw-bold blog-title">
+                                                EveryDay Studying can make success!
+                                                And everything is okay.
+                                            </h2>
+                                            <p class="text-black-50 blog-text my-3">
+                                                Accusamus aliquam, dolorum in ipsam natus ratione temporibus voluptates. At atque doloribus laborum magnam,
+                                            </p>
+                                            <span class="d-inline-block text-black-50 blog-text  ">
+                                               <i class="bi bi-person-circle me-2"></i>
+                                               RiO
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-2">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xl-4">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="blog-item round_C mb-3">
+                                            <img src="img/blog.webp" alt="" class="img-fluid mb-3 round_C">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span class="text-black-50 mb-3 d-inline-block blog-text">
+                                                            <i class="bi bi-calendar-check me-2"></i>
+                                                            December, 7, 2021
+                                                        </span>
+                                                        <span class="d-inline-block text-black-50 blog-text">
+                                                           <i class="bi bi-person-circle me-2"></i>
+                                                           RiO
+                                                        </span>
+                                                    </div>
+                                                    <h4 class="text-black fw-bold blog-title">
+                                                        EveryDay Studying can make success!
+
+                                                    </h4>
+                                                    <p class="text-black-50 my-3 blog-text">
+                                                        voluptates. At atque doloribus laborum magnam,
+                                                    </p>
+                                                    <span class="d-inline-block text-primary d-block text-end">
+                                                     click to see more
+                                                    <i class="bi bi-arrow-right-short me-2"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="logo d-inline-block me-2">
+                                            <img src="img/letter-b.png" alt="" class="img-fluid">
+                                        </div>
+                                        <span class="text-primary">Modern Blog</span>
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <span class="text-primary">© 2021 Modern Blog. All Right Reversed.</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-5">
+                                <div class="">
+                                    <a href="https://facebook.com" class="me-2"><i class="bi bi-facebook" style="font-size: 20px"></i></a>
+                                    <a href="https://youtube.com" class="me-2" style="color: #ff253a;"><i class="bi bi-youtube" style="font-size: 20px"></i></a>
+                                    <a href="https://facebook.com" class=""><i class="bi bi-twitter" style="font-size: 20px"></i></a>
+                                </div>
+                                <div class="text-primary">
+                                    <span class="">
+                                        <i class="bi bi-phone"></i>
+                                        09 768 700 966
+                                    </span>
+                                </div>
+                                <div class="text-primary">
+                                    <span class="">
+                                        <i class="bi bi-envelope"></i>
+                                        modern.blog@gmail.com
+                                    </span>
+                                </div>
+
+                                <div class="">
+                                    <a href="#" class="text-decoration-none text-primary">
+                                        Design By  PROnity.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
